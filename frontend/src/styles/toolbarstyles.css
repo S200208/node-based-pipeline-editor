@@ -1,0 +1,132 @@
+.toolbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.toolbar-header {
+  margin-bottom: 16px;
+}
+.toolbar-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+  font-weight: 600;
+}
+.toolbar-header p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+}
+.toolbar-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.draggable-node {
+  cursor: grab;
+  min-width: 100px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1C2536 0%, #2a3548 100%);
+  border: 1px solid #3a4558;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  flex-direction: column;
+  user-select: none;
+  padding: 8px;
+}
+.draggable-node:hover {
+  background: linear-gradient(135deg, #2a3548 0%, #3a4558 100%);
+  border-color: #4a5568;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.draggable-node:active,
+.draggable-node.grabbing {
+  cursor: grabbing;
+  background: linear-gradient(135deg, #151d2b 0%, #1C2536 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(0);
+}
+.draggable-node span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.customInput {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  border-color: #003d7a;
+}
+.customInput:hover {
+  background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+  border-color: #002e5c;
+}
+.customOutput {
+  background: linear-gradient(135deg, #00b050 0%, #008a3e 100%);
+  border-color: #006630;
+}
+.customOutput:hover {
+  background: linear-gradient(135deg, #008a3e 0%, #006630 100%);
+  border-color: #004d1a;
+}
+.text {
+  background: linear-gradient(135deg, #ff8c00 0%, #cc7000 100%);
+  border-color: #995200;
+}
+.text:hover {
+  background: linear-gradient(135deg, #cc7000 0%, #995200 100%);
+  border-color: #663400;
+}
+.llm {
+  background: linear-gradient(135deg, #8b00ff 0%, #6600cc 100%);
+  border-color: #4d0099;
+}
+.llm:hover {
+  background: linear-gradient(135deg, #6600cc 0%, #4d0099 100%);
+  border-color: #330066;
+}
+.math {
+  background: linear-gradient(135deg, #e60000 0%, #b30000 100%);
+  border-color: #800000;
+}
+.math:hover {
+  background: linear-gradient(135deg, #b30000 0%, #800000 100%);
+  border-color: #660000;
+}
+.condition {
+  background: linear-gradient(135deg, #00a0d0 0%, #0080a0 100%);
+  border-color: #005570;
+}
+.condition:hover {
+  background: linear-gradient(135deg, #0080a0 0%, #005570 100%);
+  border-color: #003d42;
+}
+.delay {
+  background: linear-gradient(135deg, #00c878 0%, #009d5c 100%);
+  border-color: #007a47;
+}
+.delay:hover {
+  background: linear-gradient(135deg, #009d5c 0%, #007a47 100%);
+  border-color: #005732;
+}
+.logger {
+  background: linear-gradient(135deg, #f0a000 0%, #cc8000 100%);
+  border-color: #996000;
+}
+.logger:hover {
+  background: linear-gradient(135deg, #cc8000 0%, #996000 100%);
+  border-color: #664000;
+}
+.apiInput {
+  background: linear-gradient(135deg, #d000d0 0%, #a000a0 100%);
+  border-color: #6d006d;
+}
+.apiInput:hover {
+  background: linear-gradient(135deg, #a000a0 0%, #6d006d 100%);
+  border-color: #500050;
+}
