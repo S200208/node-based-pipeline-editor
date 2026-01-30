@@ -43,8 +43,15 @@ This project is a **pipeline editor** where users can create workflows using nod
 
 ## How to Run the Project
 
-### Frontend
+### Run the Frontend development server
 ```bash
 cd frontend
 npm install
 npm start
+```
+ ### Run the Backend API server
+ ```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
