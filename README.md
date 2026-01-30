@@ -1,93 +1,50 @@
-Node-Based Pipeline Editor
-This project is a pipeline editor where users can create workflows using nodes and connections.
+# Node-Based Pipeline Editor
 
-Frontend is built using React (JavaScript)
+This project is a **pipeline editor** where users can create workflows using nodes and connections.
 
-Backend is built using FastAPI (Python)
+## Features
 
-Users can:
-Add nodes
+- **Add nodes** and connect them
+- **Use variables** inside text nodes (`{{variable}}`)
+- **Send the pipeline** to the backend for validation
+- **Get validation results**:
+  - Total nodes
+  - Total connections (edges)
+  - Check if pipeline forms a DAG (Directed Acyclic Graph)
 
-Connect nodes
+## Technologies Used
 
-Use variables inside text nodes
+- **Frontend**: React, React Flow, JavaScript
+- **Backend**: FastAPI, Python
+- **Styling**: CSS / Tailwind / Styled Components
 
-Send the pipeline to the backend
+## Main Features
 
-Get validation results (nodes, edges, DAG check)
+### Node System
+- Common logic is reused using a **base node**
+- Easily **add new nodes**
+- Includes **extra custom nodes**
 
-Technologies Used
-Frontend: React, React Flow, JavaScript
+### UI Styling
+- Consistent **design for all nodes**
+- **Clean layout** for readability
 
-Backend: FastAPI, Python
+### Text Node
+- Auto-adjusting **text area**
+- Variables create **connection handles automatically**
 
-Styling: CSS / Tailwind / Styled Components
+### Backend Validation
+- Pipeline data is sent to backend
+- Backend returns:
+  - Total nodes
+  - Total connections
+  - DAG check result
+- Results are shown as an **alert**
 
-Main Features
-Node System
+## How to Run the Project
 
-Common logic is reused using a base node.
-
-New nodes can be added easily.
-
-Extra custom nodes are included.
-
-UI Styling
-All nodes follow the same design.
-
-Clean layout and better readability.
-
-Text Node
-
-Text area auto-adjusts to content.
-
-Variables written as {{variable}}
-
-Each variable creates a connection handle automatically.
-
-Backend Validation
-
-Pipeline data is sent to backend.
-
-Backend returns:
-
-Total nodes
-
-Total connections (edges)
-
-Whether pipeline is a DAG
-
-Results are shown as an alert.
-
-How to Run the Project
-Frontend
+### Frontend
+```bash
 cd frontend
 npm install
 npm start
-Runs on: http://localhost:3000
-Backend
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-Runs on: http://localhost:8000
-How to Use
-Drag nodes into the workspace.
-
-Connect nodes to build a pipeline.
-
-Use {{variable_name}} in TextNode.
-
-Click Submit Pipeline.
-
-View results in alert:
-
-Node count
-
-Edge count
-
-DAG status
-
-Notes
-node_modules and virtual environment folders are not included.
-
-Install dependencies using npm install and pip install.
